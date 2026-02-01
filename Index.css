@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+.bodyContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  height: 50vh;
+  width: 30vw;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  animation: pop 0.6s ease;
+}
+
+.answer{
+    color: #ff4d6d;
+    font-size: 40px;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.question {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ff4d6d;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 90px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btnYes {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+}
+
+.btnYes:hover {
+  transform: scale(1.1);
+}
+
+.btnNo {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  position: relative;
+}
+
+.btnNo:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.heart {
+  position: absolute;
+  bottom: -50px;
+  animation: up 10s linear infinite;
+}
+
+/* different sizes */
+.heart1 {
+  font-size: 60px;
+  left: 5%;
+  animation-delay: 0s;
+}
+.heart2 {
+  font-size: 40px;
+  left: 13%;
+  animation-delay: 1s;
+}
+.heart3 {
+  font-size: 70px;
+  left: 20%;
+  animation-delay: 0.5s;
+}
+.heart4 {
+  font-size: 50px;
+  left: 35%;
+  animation-delay: 1.5s;
+}
+.heart5 {
+  font-size: 80px;
+  left: 57%;
+  animation-delay: 2s;
+}
+.heart6 {
+  font-size: 50px;
+  left: 75%;
+  animation-delay: 1s;
+}
+.heart7 {
+  font-size: 40px;
+  left: 85%;
+  animation-delay: 1.5s;
+}
+.heart8 {
+  font-size: 50px;
+  left: 95%;
+  animation-delay: 2.5s;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
